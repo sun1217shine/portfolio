@@ -163,30 +163,6 @@ $(document).ready(function(){
     });//.pass 서브탭 close 버튼 클릭
 
 
-    /* .gallery---------------------------------------------------- */
-
-    $('.gallery .gallIn>div>div').on('click',function(e){
-        $('.gallery .view').show();
-        var img = $(this).html();
-        $('figure').html(img);
-        $('#wrap').removeClass('move');
-    });//갤러리 이미지 클릭
-
-    $('.gallery .view').prepend('<div class="gWrap"></div>');
-    
-    $('.close, .gWrap').on('click',function(e){
-        e.preventDefault();
-        $('.gallery .view').hide();
-        $('#wrap').addClass('move');
-    });//.gallery 클로즈 버튼 or 바깥 영역 클릭
-
-    $('.gWrap').on('mouseover',function(){
-        $(this).parent().addClass('on');
-    }).on('mouseout',function(){
-        $(this).parent().removeClass('on');
-    });//.gWrap에 마우스오버
-
-
 
 
     setInterval(function(){
