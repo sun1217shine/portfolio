@@ -1,0 +1,103 @@
+.subTitle .tabBox{
+    background-image:url('https://source.unsplash.com/rfS6oq6MWlU/1920x1080'); 
+}
+
+/* 카드섹션--------------------------------------------------- */
+.card{
+    border:none;
+    border-top:2px solid #37435b;
+    transition: all 0.5s;
+    user-select: none;
+}
+.card .card-title{
+    font-weight: bold;
+}
+.card:hover{
+    transform: translateY(-15px);
+}
+
+
+/* .greetingCon / ceo 인사말------------------------------------ */
+.greetingCon{
+    height:500px;
+    background:url('../img/greeting_01.jpg') no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.greetingBox{
+    position: absolute;
+    bottom:0;
+}
+.greetingBox .nav p:nth-of-type(1){
+    font-family: 'Calligraffitti';
+    font-size:25px;
+    border-right:1px solid #37435b;
+}
+.greetingBox .nav p:nth-of-type(2){}
+
+
+/* .companyCon / 회사연혁 */
+.historyCon{
+    background:#F6F6F6;
+}
+.historyCon h4{
+    font-family: 'Calligraffitti';
+}
+
+.lineBox{
+    background:#f7d4c1;
+    font-size:110px;
+    font-family: Anton;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.textBox ul li:first-child{
+    font-weight: bold;
+    font-family: Anton;
+}
+
+
+
+
+
+
+
+/* breakpoint------------------------------------------- */
+
+@media all and (max-width : 768px){
+
+    .lineBox{
+        font-size:40px;
+    }
+
+}/* 768px */
+
+
+
+@media all and (max-width : 640px){
+    
+    .card:hover{
+        transform: translateY(0);
+    }
+
+    .card:nth-of-type(1){
+        margin-bottom:10px;
+    }
+
+    .greetingBox .nav p:nth-of-type(1){
+        font-size:16px;
+        border:none;
+    }
+
+    .greetingCon{
+        height: 300px;
+    }
+
+    .lineBox{
+        font-size:20px;
+        text-align: right;
+    }
+
+}/* 640px */

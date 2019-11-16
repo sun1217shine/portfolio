@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/cssanimation.css">
+    <link rel="stylesheet" href="../css/breakpoint.css">
+    <link rel="stylesheet" href="greeting_style.css">
+    
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="../js/scrolly.min.js"></script>
+    
+    <script src="../js/header.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            window.onload = function() {
+                scrolly();
+            }; 
+
+        });//op
+
+    </script>
+
+    <title>Greeting</title>
+</head>
+
+
+<body>
+
+    <div class="bar"></div>
+
+    <header>
+        <h1><a href="../index.html"><img src="../img/logo.png" alt="logo"></a></h1>
+        <button>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="gnb">
+            <button class="close">X Close</button>
+            <li>
+                <p>about</p>
+                <ul class="sub">
+                    <li><a href="#">introduction</a></li>
+                    <li><a href="#">consulting procedure</a></li>
+                    <li><a href="#">wedding planner</a></li>
+                    <li><a href="#">directions</a></li>
+                    <li><a href="#">site map</a></li>
+                </ul><!-- .sub -->
+            </li><!-- 첫번째 li -->
+            <li>
+                <p>hall</p>
+                <ul class="sub">
+                    <li><a href="#">view</a></li>
+                    <li><a href="#">benefit</a></li>
+                    <li><a href="#">search</a></li>
+                </ul><!-- .sub -->
+            </li><!-- 두번째 li -->
+            <li>
+                <p>gallery</p>
+                <ul class="sub">
+                    <li><a href="#">studio</a></li>
+                    <li><a href="#">wedding dress</a></li>
+                    <li><a href="#">make up</a></li>
+                    <li><a href="#">honey moon</a></li>
+                    <li><a href="#">DVD</a></li>
+                    <li><a href="#">wedding invitation letter</a></li>
+                </ul><!-- .sub -->
+            </li><!-- 세번째 li -->
+            <li>
+                <p>guide</p>
+                <ul class="sub">
+                    <li><a href="#">estimate</a></li>
+                    <li><a href="#">check list</a></li>
+                    <li><a href="#">TIP</a></li>
+                </ul><!-- .sub -->
+            </li><!-- 네번째 li -->
+            <li>
+                <p>board</p>
+                <ul class="sub">
+                    <li><a href="#">notice</a></li>
+                    <li><a href="#">story</a></li>
+                    <li><a href="#">customer story</a></li>
+                    <li><a href="#">Q &amp; A</a></li>
+                </ul><!-- .sub -->
+            </li><!-- 다섯번째 li -->
+        </ul><!-- .gnb -->
+
+        <ul class="utill">
+            <li><a href="../login/sign_up.html">sign up</a></li>
+            <li><a href="../login/login.html">login</a></li>
+        </ul><!-- utill -->
+    </header>
+
+
+    <!-- 서브 타이틀 -->
+    <div class="subTitle container-fulid">
+        
+        <!-- 탭메뉴 -->
+        <div class="tabBox row justify-content-center">
+            
+            <ul class="nav nav-tabs col-12 col-sm-8 mt-5 p-0 bg-white justify-content-center">
+                <li class="nav-item col p-0">
+                    <a class="nav-link active rounded-0" data-toggle="tab" href="#tab1">introduction</a>
+                </li>
+                <li class="nav-item col p-0">
+                    <a class="nav-link rounded-0" data-toggle="tab" href="#tab2">consulting procedure</a>
+                </li>
+                <li class="nav-item col p-0">
+                    <a class="nav-link rounded-0" data-toggle="tab" href="#tab3">wedding planner</a>
+                </li>
+                <li class="nav-item col p-0">
+                    <a class="nav-link rounded-0" data-toggle="tab" href="#tab4">directions</a>
+                </li>
+                <li class="nav-item col p-0">
+                    <a class="nav-link rounded-0" data-toggle="tab" href="#tab5">maps</a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- 서브타이틀 -->
+
+
+    <!-- 본문 -->
+    <section class="container tab-content mt-5">
+        <div class="tab-pane fade show active" id="tab1">
+
+            <div style="text-align: center;">
+                <img src="../img/logo.png" alt="logo">
+                <p class="mt-3">Wedding U exists for marriage.</p>
+            </div>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-md-4 col-sm-12 card rounded-0 shadow p-3 mb-md-5 mb-sm-auto mr-md-1 mr-sm-auto">
+                    <div class="card-body">
+                        <h5 class="card-title border-bottom pb-2">Know your worth</h5>
+                        <p class="card-text py-4">
+                            We always think about the value of the person who's involved in the marriage.
+                        </p>
+                    </div>
+                </div><!-- card1 -->
+
+                <div class="col-md-4 col-sm-12 card rounded-0 shadow p-3 mb-md-5 mb-sm-auto ml-md-1 ml-sm-auto">
+                    <div class="card-body">
+                        <h5 class="card-title border-bottom pb-2">Thoughts your happy</h5>
+                        <p class="card-text py-4">
+                            Consciousness, caring, and professionalism are the values we seek most.
+                        </p>
+                    </div>
+                </div><!-- card2 -->
+            </div><!-- 첫번째 -->
+        </div>
+    </section><!-- 본문 -->
+
+
+    <!-- ceo 인사말 -->
+    <section class="greetingCon container-fluid mt-5">
+        <div class="container">
+
+            <div class="greetingBox row">
+
+                <div class="nav nav-tabs col-12 col-sm-8 py-sm-1 py-md-4 bg-white">
+                    <p class="col-2 text-right">Wedding<br>U<br>CEO's</p>
+                    <p class="col-10 text-center align-self-center"><i class="fas fa-quote-left mr-2"></i>For 10 years, I've been on the field personally helping clients get married from start to finish, always keeping to the basics and always working hard to treat you.<i class="fas fa-quote-right ml-2"></i></p>
+                </div>
+            </div>
+        </div>
+    </section><!-- .greetingCon -->
+
+
+    <!-- 회사연혁 -->
+    <section class="historyCon container-fluide">
+        <div class="container py-5">
+
+            <h4 class="text-center">Company's History</h4>
+
+            <div class="historyBoxLeft row no-gutters mt-5 text-right" data-scrolly-down="blurInRight">
+                <div class="textBox col-5 pr-md-5 pr-sm-2">
+                    <ul>
+                        <li>Jan.</li>
+                        <li>Fresh Start Wedding & Mixed-use Exposition</li>
+                    </ul>
+                    <ul>
+                        <li>Feb.</li>
+                        <li>Cheongdam Wedding Fair</li>
+                    </ul>
+                    <ul>
+                        <li>Mar.</li>
+                        <li>Spring Wedding Fair</li>
+                    </ul>
+                    <ul>
+                        <li>Jun.</li>
+                        <li>Cheongdam Honeymoon Fair</li>
+                    </ul>
+                    <ul>
+                        <li>Sep.</li>
+                        <li>Fall Grand Exposition</li>
+                    </ul>
+                </div><!-- .txtBox -->
+
+                <div class="lineBox col-2 pl-sm-2">
+                    <p class="text-left text-sm-right">2018</p>
+                </div>
+            </div><!-- 2018 -->
+
+
+            <div class="historyBoxRight row no-gutters text-left justify-content-end" data-scrolly-down="blurInLeft">
+                <div class="textBox col-5 pl-md-5 pl-sm-2 order-12">
+                    <ul>
+                        <li>Jan.</li>
+                        <li>Fresh Start Wedding & Mixed-use Exposition</li>
+                    </ul>
+                    <ul>
+                        <li>Mar.</li>
+                        <li>Spring Wedding Fair</li>
+                    </ul>
+                    <ul>
+                        <li>Apr.</li>
+                        <li>VIP Cheongdam Wedding Fair</li>
+                    </ul>
+                    <ul>
+                        <li>Jul.</li>
+                        <li>Cheongdam Wedding Fair</li>
+                    </ul>
+                    <ul>
+                        <li>Aug.</li>
+                        <li>VIP Cheongdam Wedding Fair</li>
+                    </ul>
+                    <ul>
+                        <li>Sep.</li>
+                        <li>Fall Grand Exposition</li>
+                    </ul>
+                </div><!-- .txtBox -->
+
+                <div class="lineBox col-2 pl-2">
+                    <p class="text-right">2017</p>
+                </div>
+            </div><!-- 2017 -->
+
+
+            <div class="historyBoxLeft row no-gutters text-right" data-scrolly-down="blurInRight">
+                <div class="textBox col-5 pr-md-5 pr-sm-2">
+                    <ul>
+                        <li>Feb.</li>
+                        <li>Smart Coma Home Appliances Invitation</li>
+                    </ul>
+                    <ul>
+                        <li>Mar.</li>
+                        <li>Spring Wedding Fair</li>
+                    </ul>
+                    <ul>
+                        <li>Jun.</li>
+                        <li>Ffestival of offerings festival</li>
+                    </ul>
+                    <ul>
+                        <li>Sep.</li>
+                        <li>Fall Grand Exposition</li>
+                    </ul>
+                </div><!-- .txtBox -->
+
+                <div class="lineBox col-2 pl-sm-2">
+                    <p class="text-left text-sm-right">2016</p>
+                </div>
+            </div><!-- 2016 -->
+
+            <div class="historyBoxRight row no-gutters text-left justify-content-end" data-scrolly-down="blurInLeft">
+                <div class="textBox col-5 pl-md-5 pl-sm-2 order-12">
+                    <ul>
+                        <li>Mar.</li>
+                        <li>Establishment</li>
+                    </ul>
+                    <ul>
+                        <li>Apr.</li>
+                        <li>Website Open</li>
+                    </ul>
+                    <ul>
+                        <li>Aug.</li>
+                        <li>System Establishment</li>
+                    </ul>
+                </div><!-- .txtBox -->
+
+                <div class="lineBox col-2 pl-2">
+                    <p class="text-right">2015</p>
+                </div>
+            </div><!-- 2015 -->
+
+        </div>
+    </section><!-- .companyCon -->
+
+
+
+        
+  
+
+
+
+
+    <footer>
+        <img src="../img/flower_03.png" alt="flower">
+        <h1><img src="../img/logo.png" alt="logo"></h1>
+        <ul class="cf">
+            <li><a href="#">Company introduction</a></li>
+            <li><a href="#">Job placement guidance</a></li>
+            <li><a href="#">Application for partnership</a></li>
+            <li><a href="#" class="bold">Privacy Policy</a></li>
+            <li><a href="#">Directions</a></li>
+        </ul>
+        <div class="info">
+            <p>CEO : Yoo Hee Jung</p>
+            <address>address : 506 2F of Hakdong-ro, Gangnam-gu, Seoul</address>
+            <p>tel : 02-541-2525</p>
+            <p>company name : Weddingyu Infrastructure Group Co., Ltd.</p>
+            
+            <p class="copyright">
+            copyright ⓒ Wedding U All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <div id="topBtn">
+        <img src="../img/top_01.png" alt="top button">
+        <img src="../img/top_02.png" alt="top button">
+    </div><!-- #top -->
+
+    
+</body>
+</html>

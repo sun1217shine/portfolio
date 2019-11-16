@@ -1,0 +1,138 @@
+nav .navTop{
+    background-image:url(../img/nav_01.png);
+}
+
+
+/* .gWrap---------------------------------------------------------------------------- */
+.gWrap{
+    width:100%;
+    background:#fff;
+    box-shadow:0 25px 30px rgba(0,0,0,0.03);
+    box-sizing: unset;
+    margin-bottom:250px;
+    padding-bottom:100px;
+}
+
+
+/* .about------------------------------------------------------------------------------ */
+.about{
+    position: relative;
+    width:980px;
+    height:600px;
+    margin:0 auto;
+}
+.about>div{
+    position: absolute;
+}
+
+/* .txtBox */
+.about .txtBox{
+    top:100px;
+    left:80px;
+    width: 350px;
+    text-align: right;
+}
+.about .txtBox p:first-child{
+    font-size:25px;
+    font-family:'Fugaz One';
+    margin-bottom:30px;
+    position:relative;
+    z-index:10;
+    display: inline-block;
+}
+.about .txtBox p:first-child:after{
+    display:block;
+    content:'';
+    width:120%;
+    height:20px;
+    background:rgba(198, 0, 57, 0.5);
+    position:absolute;
+    top:16px;
+    right:-10px;
+    z-index:-1;
+    transform:skewX(-10deg);
+}
+
+
+/* .imgBox */
+.about .imgBox{
+    right:50px;
+    top:0;
+}
+.about .imgBox img{
+    height:450px;
+    padding:50px 20px 0 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about .imgBox ul{
+    width:50px;
+    height:100px;
+    font-size:20px;
+}
+.about .imgBox ul li{
+    background:#444586;
+    color:#fff;
+    line-height:50px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.about .imgBox ul li:hover{
+    color:#444586;
+    background:#fff;
+    transform: translateX(-10px);
+}
+
+.about .imgBox ul li:first-child{
+    border-bottom: 1px solid #fff;
+}
+.about .imgBox ul li a{
+    display: block;
+}
+.about .imgBox ul li a i{}
+
+.about>img{
+    position: absolute;
+    top:60px;
+    left:400px;
+    width:400px;
+    transform: rotate(-40deg);
+}
+
+
+/* .welcome-------------------------------------------------------------------------------- */
+.welcome{
+    width:980px;
+    height:900px;
+    margin:0 auto;
+    position: relative;
+    margin-top:100px;
+}
+.welcome>div{
+    position: absolute;
+}
+
+.welcome .imgBox{
+    left:20px;
+}
+.welcome .imgBox img{
+    height: 900px;
+}
+
+.welcome .txtBox{
+    width:308px;
+    right:0;
+    top:-320px;
+    background:#fff;
+    padding:30px 0 10px 40px;
+}
+.welcome .txtBox p:first-child{
+    font-size:25px;
+    font-weight: bold;
+    font-family: 'Fugaz One';
+    margin-bottom:30px;
+}
+.welcome .txtBox span{
+    color: #c60039;
+}
+

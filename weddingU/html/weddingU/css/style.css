@@ -1,0 +1,655 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti|Quattrocento');
+
+body{font-family: Quattrocento; color:#37435b; overflow-x: hidden;}
+
+
+
+
+
+/* .mainBn--------------------------------------------------------- */
+.mainBn{
+    height:500px;
+}
+.mainBn .wrap{
+    width:1200px;
+    margin:0 auto;
+    position: relative;
+}
+.mainBn .wrap img{
+    height: 500px;
+}
+.mainBn .wrap>p{
+    mix-blend-mode: screen;
+    position: absolute;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:70px;
+    font-family: 'Calligraffitti';
+    line-height:1.2;
+    text-align: right;
+}
+
+.mainBn .mTxt{
+    display: flex;
+    transform: rotate(-90deg);
+    transform-origin:left bottom;
+    position: absolute;
+    left:-10px;
+    top:80%;
+}
+.mainBn .mTxt p{
+    font-size:12px;
+    margin-right:60px;
+}
+.mainBn .mTxt .lang{
+    font-weight:bold;
+    display: flex;
+    font-size:14px;
+}
+.mainBn .mTxt .lang li{}
+.mainBn .mTxt .lang li a{
+    transition: all 0.3s;
+}
+.mainBn .mTxt .lang li a:hover{
+    color:#f7d4c1;
+}
+
+
+/* .about------------------------------------------------ */
+.about{
+    background:url(../img/bg_01.png) no-repeat center top;
+    text-align: center;
+    background-size: cover;
+}
+.about h2{
+    font-family:'Calligraffitti';
+    padding-top: 235px;
+    font-size:30px;
+    font-weight: normal;
+    user-select: none;
+    box-sizing: border-box;
+}
+.about p{
+    margin-top:32px;
+    line-height:1.5;
+    user-select: none;
+}
+.about button.more{
+    margin-top:68px;
+    padding:0 10px;
+    height:36px;
+    background:none;
+    border:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.about button.more:hover{
+    transform: translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+/* .plan---------------------------------------------------- */
+.plan{
+    width:1200px;
+    margin:0 auto;
+    margin-top:100px;
+    position: relative;
+}
+.plan h2{
+    font-family:'Calligraffitti';
+    font-size:30px;
+    font-weight: normal;
+    user-select: none;
+    text-align: center;
+    margin-bottom:47px;
+}
+.plan .img{
+    width:50%;
+    float: left;
+}
+.plan .img li{}
+.plan .img li img{
+    width:100%;
+}
+
+.plan .slick-dots{
+    position: absolute;
+    left:50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+}
+.plan .slick-dots:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.plan .slick-dots>li{
+    margin-right:5px;
+    float: left;
+}
+.plan .slick-dots>li:nth-child(3){
+    margin-right: 0;
+}
+.plan .slick-dots>li button{
+    width:15px;
+    height:15px;
+    background:#37435b;
+    border:none;
+    color:#fff;
+    border-radius: 50%;
+    
+    text-indent:-9999px;
+    cursor: pointer;
+    position: relative;
+}
+.plan .slick-dots>li button:after{
+    display: block;
+    content: 'D-180';
+    color: #fff;
+    text-indent:0;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:0;
+    font-size: 12px;
+    line-height:15px;
+    opacity: 0;
+}
+.plan .slick-dots>li:nth-child(1) button:after{
+    content: 'D-180';
+}
+.plan .slick-dots>li:nth-child(2) button:after{
+    content: 'D-120';
+}
+.plan .slick-dots>li:nth-child(3) button:after{
+    content: 'D-80';
+}
+.plan .slick-dots>li.slick-active button{
+    width:80px;
+    border-radius:100px;
+}
+.plan .slick-dots>li.slick-active button:after{
+    width:80px;
+    border-radius:100px;
+    opacity: 1;
+}
+
+
+.plan .txt{
+    width:50%;
+    float: left;
+    padding-left:150px;
+    box-sizing: border-box;
+}
+.plan .txtBox>p{
+    font-size:30px;
+}
+
+.plan .txtIn{
+    margin:30px 0;
+    opacity: 0.1;
+}
+.plan .txtIn li:first-child{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+
+
+.plan .flower{
+    position: absolute;
+    right:0;
+    bottom:5%;
+    z-index:-1;
+    width:200px;
+}
+.plan .box{
+    position: absolute;
+    width:15%;
+    height:60%;
+    background: #f7d4c1;
+    z-index: -1;
+    left:50%;
+    top:30%;
+    margin-left:30px;
+}
+.plan .line{
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Calligraffitti';
+    transform: rotate(-90deg);
+    transform-origin:left top;
+    left:55%;
+    top:60%;
+    user-select: none;
+}
+.plan .line:after{
+    display: block;
+    content: '';
+    width:2px;
+    height:50px;
+    background: #37435b;
+    transform: rotate(-90deg);
+    transform-origin:left top;
+    position: absolute;
+    left:-40%;
+    top:50%;
+}
+
+
+/* .planer----------------------------------------------------- */
+.planer{
+    width:1200px;
+    margin:0 auto;
+    margin-top:201px;
+}
+.planer h2{
+    font-family:'Calligraffitti';
+    font-size:30px;
+    font-weight: normal;
+    user-select: none;
+    text-align: center;
+    margin-bottom:47px;
+}
+.planer article{
+    width:50%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.planer article .img{
+    width:100%;
+    position: relative;
+    z-index:1;
+}
+
+.planer article .img:after{
+    display: block;
+    content:'';
+    width: 70%;
+    height:80%;
+    border:2px solid #f7d4c1;
+    position: absolute;
+    z-index:-1;
+    right:50px;
+    top:20px;
+}
+.planer article:nth-of-type(2) .img:after{
+    height:50%;
+    top:35%;
+}
+.planer article .img img.p{
+    width:50%;
+}
+.planer article .img img.m{
+    display: none;
+}
+
+.planer article .img p{
+    position: absolute;
+}
+.planer article .img p:nth-of-type(1){
+    top:10px;
+    left:0;
+    font-size: 18px;
+    background:rgba(255,255,255,0.8);
+    padding:7px 15px;
+    box-sizing: border-box;
+}
+.planer .line{
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Calligraffitti';
+    transform: rotate(-90deg);
+    transform-origin:left top;
+    left:52%;
+    top:50%;
+    user-select: none;
+}
+.planer .line:after{
+    display: block;
+    content: '';
+    width:2px;
+    height:50px;
+    background: #37435b;
+    transform: rotate(-90deg);
+    transform-origin:left top;
+    position: absolute;
+    left:-60%;
+    top:50%;
+}
+
+.planer article .img p:nth-of-type(3){
+    left:52%;
+    bottom:30px;
+}
+.planer article .img p:nth-of-type(3) span{
+    transition: all 0.3s;
+
+}
+.planer article .img p:nth-of-type(3):hover span{
+    margin-left: 10px;
+}
+
+.planer article .txt{
+    text-align: center;
+    margin-top:64px;
+    line-height:1.5;
+    font-size:14px;
+}
+
+.planer button.more{
+    margin:0 auto;
+    padding:0 10px;
+    height:36px;
+    background:none;
+    border:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.5s;
+    display: block;
+    box-sizing: border-box;
+}
+.planer button.more:hover{
+    transform: translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+/* .touch------------------------------------------------- */
+.touch{
+    margin-top:50px;
+    background:url(../img/bg_02.png) no-repeat center top;
+    background-size:cover;
+}
+.touch .wrap{
+    padding-top:50px;
+    width:1200px;
+    margin:0 auto;
+    padding-bottom:60px;
+}
+
+.touch .info{
+    width: 50%;
+    float: left;
+}
+.touch .info h2{
+    font-family:'Calligraffitti';
+    font-size:30px;
+    font-weight: normal;
+    user-select: none;
+    text-align: center;
+    margin-bottom:47px;
+}
+.touch .infoIn{}
+.touch .infoIn li{
+    margin-bottom:15px;
+}
+.touch .infoIn p{
+    width:15%;
+    display: inline-block;
+    font-size: 14px;
+    margin-right:5%;
+    text-align: right;
+}
+.touch .infoIn input{
+    border:none;
+    height:25px;
+    width:70%;
+    text-indent:10px;
+    font-family:'Quattrocento', serif;
+}
+.touch .infoIn textarea{
+    border:none;
+    resize: none;
+    width:70%;
+}
+
+.touch .sns{
+    width: 50%;
+    float: left;
+}
+.touch .sns .img{
+    width:90%;
+    margin-left:10%;
+    position: relative;
+    z-index: 1;
+}
+.touch .sns .img:after{
+    display: block;
+    content: '';
+    width:100%;
+    height:100%;
+    background:#f7d4c1;
+    position: absolute;
+    left:30px;
+    top:50px;
+    z-index:-1;
+}
+.touch .sns .img>img{
+    width:100%;
+}
+.touch .sns .img p{
+    position: absolute;
+    bottom:-35px;
+    left:40px;
+}
+.touch .sns .img p img{
+    transition: all 0.3s;
+}
+.touch .sns .img p:hover img{
+    transform: scale(1.1);
+}
+.touch .sns .img p a{}
+.touch .sns .img p img{
+    margin-right:12px;
+}
+
+.touch .sns .line{
+    position: relative;
+    font-size: 18px;
+    font-family: 'Calligraffitti';
+    transform: rotate(-90deg);
+    transform-origin:left top;
+    top:-100px;
+    user-select: none;
+    display:inline-block;
+}
+.touch .sns .line:after{
+    display: block;
+    content: '';
+    width:2px;
+    height:50px;
+    background: #37435b;
+    transform: rotate(-90deg);
+    transform-origin:left top;
+    position: absolute;
+    top:13px;
+    left:-70px;
+}
+.touch .sns .line span{
+    font-family: 'Quattrocento';
+    font-size:13px;
+    margin-left:10px;
+}
+
+
+
+/* .mapCon 지도--------------------------------------------------- */
+.mapCon{
+    width:1200px;
+    margin:0 auto;
+    margin-top:50px;
+    height:400px;
+}
+.mapCon h2{
+    font-family:'Calligraffitti';
+    font-size:30px;
+    font-weight: normal;
+    user-select: none;
+    text-align: center;
+    margin-bottom:47px;
+}
+
+.mapCon #map{
+    width:100%;
+    height:400px;
+}
+
+/* .mapWrap---------------- */
+.mapWrap{
+    border:10px solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    height: 132px;
+    margin-left: -144px;
+    text-align: left;
+    font-size: 12px;
+}
+.mapWrap .info:after {
+    content: '';
+    position: absolute;
+    margin-left: -12px;
+    left: 50%;
+    bottom: 0;
+    width: 22px;
+    height: 12px;
+    background: url('http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
+.mapWrap .info .title{
+    font-family:'Calligraffitti';
+    background:#37435b;
+    text-align: center;
+    padding: 5px 0 0 10px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f7d4c1;
+}
+.mapWrap .info .title .close{
+    position: absolute;
+    top:0;
+    right: 10px;
+}
+.mapWrap .info .close:hover {cursor: pointer;}
+
+
+.mapWrap .mapInfo{
+    background:#fff;
+}
+.mapWrap .mapInfo li{
+    display: table;
+    border-bottom:1px solid #ccc;
+}
+.mapWrap .mapInfo i{
+    display: table-cell;
+    font-size:20px;
+    text-align: center;
+    vertical-align: middle;
+    border-right:1px dotted #ccc;
+    width:30%;
+    padding:10px 0;
+}
+.mapWrap .mapInfo p{
+    font-size:14px;
+    display: table-cell;
+    padding-left:10px;
+    vertical-align: middle;
+}
+
+
+
+
+/* footer--------------------------------------------------- */
+footer{
+    text-align: center;
+    position: relative;
+    font-size:14px;
+    padding-bottom:50px;
+}
+footer>img{
+    width:175px;
+    position: absolute;
+    left:40%;
+    z-index:-1;
+}
+footer h1{
+    padding-top: 73px;
+}
+footer h1 img{}
+
+footer ul{
+    margin:0 auto;
+    width:706px;
+    margin-top:24px;
+}
+footer ul li{
+    text-align: center;
+    display: inline-block;
+    margin-right:9px;
+    margin-bottom:5px;
+}
+footer ul li:not(:last-child):after{
+    display: inline-block;
+    content: '';
+    width:1px;
+    height: 10px;
+    background:#37435b;
+    margin-left:9px;
+    vertical-align: middle;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+footer ul li a.bold{
+    font-weight: bold;
+}
+
+footer .info{
+    margin-top:30px;
+    line-height:1.5;
+}
+footer .info p{}
+footer .info address{}
+footer .info p.copyright{
+    margin-top:21px;
+    font-weight: bold;
+}
+
+
+/* #top-------------------------------------------------- */
+#top{
+    width:30px;
+    position: fixed;
+    z-index:9999;
+    bottom:60px;
+    right:20px;
+    cursor: pointer;
+}
+#top img{
+    position: absolute;
+}
+#top img:nth-child(1){
+    top:0;
+    left:0;
+    transition:all 0.3s;
+}
+#top:hover img:first-child{
+    top:-5px;
+}
+#top img:nth-child(2){
+    top:12px;
+    left:0;
+}
+
+
+
+
+
+
+
