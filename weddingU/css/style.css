@@ -502,13 +502,12 @@ body{font-family: Quattrocento; color:#37435b; overflow-x: hidden;}
 
 /* .mapWrap---------------- */
 .mapWrap{
-    border:10px solid transparent;
+    width:500px;
     position: absolute;
-    left: 0;
-    bottom: 40px;
+    left: 50%;
+    bottom: 35px;
+    transform: translateX(-50%);
     height: 132px;
-    margin-left: -144px;
-    text-align: left;
     font-size: 12px;
 }
 .mapWrap .info:after {
@@ -556,7 +555,6 @@ body{font-family: Quattrocento; color:#37435b; overflow-x: hidden;}
     padding:10px 0;
 }
 .mapWrap .mapInfo p{
-    font-size:14px;
     display: table-cell;
     padding-left:10px;
     vertical-align: middle;

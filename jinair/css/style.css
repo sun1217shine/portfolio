@@ -415,11 +415,6 @@ section{
 .popular .first img{
     width:40%;
     height:40%;
-    transition: all 0.5s;
-}
-.popular .first img:hover{
-    transform: scale(1.1);
-    z-index:1;
 }
 .popular .first span{
     font-size:20px;

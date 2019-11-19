@@ -193,17 +193,19 @@ header .utill>li:not(.lang):hover a{
 }
 
 
+section{
+    padding-top:40px;
+}
 /* .mainBn------------------------------------------ */
 .mainBn{
     width:100%;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     background-color:#000;
-    margin-top:40px;
 }
 .mainBn video{
-    width: 100%;
-    height:100%;
+    width:100%;
     opacity: 0.4;
     margin-top:-10%;
 }
@@ -329,12 +331,9 @@ header .utill>li:not(.lang):hover a{
 }
 .popular .wrap{
     text-align:center;
-    padding-top:20px;
-    box-sizing: border-box;
     position: absolute;
     left:50%;
     margin-left:-600px;
-    padding-top:40px;
 }
 
 .popularIn{
@@ -628,6 +627,8 @@ header .utill>li:not(.lang):hover a{
 .pass{
     width: 1200px;
     margin:0 auto;
+    padding-top:40px;
+    box-sizing: border-box;
 }
 .pass h2.right{
     box-sizing: border-box;
@@ -696,13 +697,12 @@ header .utill>li:not(.lang):hover a{
     height:100%;
     border:1px solid transparent;
     box-sizing: border-box;
-    transition: all 0.5;
+    transition: all 0.5s;
 }
 .pass .subTab ul li:last-child{
     margin-right:0;
 }
 .pass .subTab ul li a{
-    box-shadow:0 10px 20px rgba(0,0,0,0.1);
     display: block;
     height:100%;
     width:100%;
@@ -727,6 +727,8 @@ header .utill>li:not(.lang):hover a{
 
 .pass .subTab ul li .txt{
     padding:25px 25px 20px 25px;
+    background: #fff;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
 }
 .pass .subTab ul li .txt p:nth-child(1){
     font-weight: bold;
@@ -889,7 +891,6 @@ header .utill>li:not(.lang):hover a{
     background:#c1d82f;
     color:#fff;
 }
-
 
 /* .gallery-------------------------------------------------------------------------------- */
 .gallery{

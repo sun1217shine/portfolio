@@ -273,27 +273,20 @@
         });
 
         // 커스텀 오버레이에 표시할 컨텐츠 입니다
-        var content = '<div class="mapWrap">' +
-                        '<div class="info">' +
-                            '<div class="title">' + 'Direction' +
-                                '<div class="close" onclick="closeOverlay()" title="닫기"><i class="fas fa-times-circle"></i></div>'+ //.close
-                            '</div>' + //.title
-                            
-                            '<ul class="mapInfo">' +
-                                '<li>' + 
-                                    '<i class="fas fa-map-marked-alt"></i>' +
-                                    '<p>' + '506 2F of Hakdong-ro, Gangnam-gu, Seoul' + '</p>' + 
-                                '</li>' + //첫번째 li
-                                
-                                '<li>' + 
-                                    '<i class="fas fa-map-marked-alt"></i>' +
-                                    '<p>' + 'Exit 5 of Cheongdam Station on Line 7' + '</p>' + 
-                                '</li>' + //두번째 li
-                            '</ul>' + //mapInfo
-                        
-                        '</div>' + //.info
-                    '</div>';//.mapWrap
-
+        var content = '<div class="wrap">' + 
+                    '    <div class="info">' + 
+                    '        <div class="title">' + 
+                    '            Wedding U' + 
+                    '            <div class="close" onclick="closeOverlay()" title="닫기"><i class="fas fa-times-circle"></i></div>' + 
+                    '        </div>' + 
+                    '        <div class="body">' + 
+                    '            <div class="img">' +
+                    '                <img src="http://cfile181.uf.daum.net/image/250649365602043421936D" width="73" height="70">' +
+                    '           </div>' + 
+                    '            <div class="desc">' + 
+                    '                <div class="ellipsis">506 2F of Hakdong-ro, Gangnam-gu, Seoul</div>' + 
+                    '    </div>' +    
+                    '</div>';
 
         // 마커 위에 커스텀오버레이를 표시합니다
         var overlay = new kakao.maps.CustomOverlay({
