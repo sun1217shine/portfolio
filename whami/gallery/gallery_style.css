@@ -1,0 +1,121 @@
+nav .navTop{
+    background-image:url(../img/nav_02.png);
+}
+
+/* 본문----------------------------------------------------------------------------- */
+.gWrap{
+    width:100%;
+    background:#fff;
+    box-shadow:0 25px 30px rgba(0,0,0,0.03);
+    box-sizing: unset;
+    margin-bottom:250px;
+    padding-bottom:100px;
+}
+section{
+    width: 980px;
+    margin: 0 auto;
+}
+section>ul{
+    display: table;
+    width:980px;
+    table-layout: fixed;
+    margin-bottom: 50px;
+}
+section>ul>li{
+    display: table-cell;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+section>ul>li>a{
+    display: block;
+}
+section>ul>li>a>div{}
+
+/* .imgBox */
+section>ul>li .imgBox{
+    overflow: hidden;
+    height:240px;
+    position: relative;
+}
+section>ul>li .imgBox>img{
+    height: 240px;
+    position: absolute;
+}
+section>ul>li .imgBox i{
+    position: absolute;
+    left:50%;
+    top:50%;
+    color: #fff;
+    font-size:60px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.7s;
+}
+section>ul>li>a:hover i{
+    opacity: 1;
+}
+section>ul>li .imgBox ul{
+    position: absolute;
+    right:0;
+    top:0;
+}
+section>ul>li .imgBox ul li{
+    width:30px;
+    height:30px;
+    color: #fff;
+    font-size:10px;
+    text-align: center;
+    line-height: 30px;
+}
+section>ul>li .imgBox ul li:nth-child(even){
+    background:#444586;
+}
+section>ul>li .imgBox ul li:nth-child(odd){
+    background:#c60039;
+}
+
+/* .txtBox */
+section>ul>li .txtBox{
+    background:#fff;
+    padding:10px 20px 30px 20px;
+}
+section>ul>li .txtBox p{}
+section>ul>li .txtBox p:first-child{
+    font-size:20px;
+    font-weight: bold;
+    border-bottom:1px solid #ededed;
+}
+section>ul>li .txtBox p:last-child{
+    padding-top:15px;
+    font-size:14px;
+}
+
+/* .numBox */
+section .numBox{
+    text-align: center;
+    font-size:24px;
+}
+section .numBox i:nth-of-type(1){
+    margin-right:30px;
+}
+section .numBox i:nth-of-type(2){
+    margin-left:30px;
+}
+section .numBox span{
+    margin:0 4px;
+}
+section .numBox span.on{
+    position: relative;
+    z-index: 1;
+}
+section .numBox span.on:after{
+    display:block;
+    content:'';
+    width:200%;
+    height:20px;
+    background:rgba(103, 58, 183, 0.5);
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-1;
+    transform:skewX(10deg) translate(-50%, -50%);
+}
