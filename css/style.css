@@ -79,14 +79,14 @@ h1{
 .dPage{
     position:fixed;
     right:50px;
-    bottom:120px;
+    bottom:140px;
     z-index:1;
     transform:rotate(-90deg);
     transform-origin:right bottom;
     transition:all 0.5s;
 }
 .dPage:hover{
-    bottom:140px;
+    bottom:160px;
     padding-left:20px;
 }
 .dPage p{
