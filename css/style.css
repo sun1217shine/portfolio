@@ -110,7 +110,7 @@ header .gnb ul li:hover a{animation:.1s linear infinite alternate headHover}
 .webBox .txtBox .detailBox li{display:flex;flex-direction: row;justify-content: flex-start;align-items: center;align-content: center;flex-wrap: wrap;}
 .webBox .txtBox .detailBox .info{width: 60px;}
 .webBox .txtBox .detailBox .bar{width: calc(100% - 125px);margin: 0 10px;height: 15px;position: relative;}
-.webBox .txtBox .detailBox .bar > div{width: 0;background: #fff;height: 15px;border-radius: 100px; transition: .5s;position: absolute; left: 0;}
+.webBox .txtBox .detailBox .bar > div{width: 0;background: #fff;height: 15px;border-radius: 100px; transition: .7s;position: absolute; left: 0;}
 .webBox:hover .txtBox .detailBox .bar > div{width: 100%;}
 .webBox:hover .txtBox .detailBox .bar.per50 > div{width: 50%;}
 .webBox:hover .txtBox .detailBox .bar.per60 > div{width: 60%;}
