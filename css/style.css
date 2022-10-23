@@ -6,7 +6,12 @@ header .logo{float: left;}
 header .gnb{float: right;}
 header .gnb ul li{float: left}
 header .gnb ul li:not(:last-child):after{display:inline-block; content:'';width:7px; height:7px;background-color:#1d2474;; border-radius:50%;margin:0 30px; vertical-align: middle;}
-header .gnb ul li a{font-family: 'GmarketSans';color: #1d2474;font-size: 1.25em;}
+header .gnb ul li a{font-family: 'GmarketSans';color: #1d2474;font-size: 1.25em;display: inline-block;}
+header .gnb ul li:hover a{animation:.3s linear infinite alternate headHover}
+@keyframes headHover{
+    0%{transform: rotate(10deg);}
+    100%{transform: rotate(-10deg);}
+}
 
 
 
