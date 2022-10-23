@@ -1,6 +1,9 @@
 @media only screen and (max-width:1400px){
     /* web */
     .webCon{width: 100%;}
+
+    /* content */
+    .galleryBox{width: 100%;}
 }
 
 
@@ -25,11 +28,13 @@
     #about .aboutInfo{display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: space-between;align-content: center;}
     #about .aboutInfo li{margin-bottom: 7px;flex: 1 1 40%;padding: 9px 0;}
     #about .infoBox{margin-top: 30px;}
-    #about .infoBox .info li{margin-bottom: 20px;;}
+    #about .infoBox .tit{font-size: 1.2em;}
+    #about .infoBox .info li{margin-bottom: 20px;font-size: 1em;}
     #about .infoBox .info li span{display: block;}
     #about .infoBox .info li span.txt{position: relative;padding-left: 23px;}
     #about .infoBox .info li span.txt::before{display: block;content: '';width: 4px;height: 4px;background-color: #fff;border-radius: 50%;position: absolute;top: 11px;left: 11px;}
     .webBox .imgBox:after{bottom: 0;height: 50%;}
+    .webBox .imgBox img{width: 100%; height: auto;}
     .webBox .txtBox{width: calc(100% - 40px);left: 20px;bottom: 22px;}
     .webBox .txtBox .tit{width: 100%;text-overflow: ellipsis;overflow:  hidden; white-space: nowrap;}
     .webBox .txtBox .detailBox .bar > div{width: 100%;}
@@ -39,9 +44,13 @@
     .webBox .txtBox .detailBox .bar.per75 > div{width: 75%;}
     .webBox:hover .imgBox:after{bottom:0;}
     .webBox:hover .txtBox{bottom: 22px;}
-
-    /* design */
     #design .webBox .txtBox{background: none;bottom: 0;padding: 20px;}
+
+
+    /* content */
+    .content .sectionTit{margin-top: 30px;}
+    .sectionTit h2{font-size: 2em;}
+    .galleryBox li{flex:0 1 33.3%;height: 230px;}
 
 }
 
@@ -66,8 +75,17 @@
     .mainCon article .subTxt:before{display:block;content:'';width:20px;height:1px;background:#fff;position: absolute;left: 50%;transform: translateX(-50%);top: 0;}
     .contact{display: none;}
 
+
+    /* about */
+    .sectionTit{margin-bottom:20px;}
+    .webBox .txtBox .tit{font-size:1.2em;}
+
     /* web */
     .webBox{flex:1 1 50%;max-width: 50%;}
+
+    /* content */
+    .content .sectionTit{margin-bottom: 20px;}
+    .galleryBox li{flex:0 1 50%;height: 150px;}
 }
 
 
