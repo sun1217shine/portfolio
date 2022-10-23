@@ -1,192 +1,393 @@
 <!doctype html>
-<html lang="en">
+<html lang="kor">
 <head>
-<title>Seon Hye Jin portfolio</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Sun Hye Jin portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/main.js"></script>
+
 </head>
 
 <body>
-<div id="mainWrap">
-    
-    <h1>Portfolio<br>is Sun</h1>
+    <!-- header -->
+    <header class="cf">
+        <h1 class="logo"><a href="../index.html" title="바로가기"><img src="../img/logo.png" alt="sun"></a></h1>
+        <nav class="gnb">
+            <ul class="cf">
+                <li><a href="#mainWrap">Main</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#web">Web site</a></li>
+                <li><a href="#design">Design</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- // header -->
+
+
+    <!-- mainWrap -->
+    <div id="mainWrap">
         
-    <section class="sns">
-        <ul>
-            <li>contact</li>
-            <li><a href="mailto:sun1217shine@gmail.com"><i class="far fa-envelope"></i></a></li>
-            <li><i class="fas fa-mobile-alt"></i><p>010-7617-0618</p></li>
-        </ul>
-    </section><!--sns-->
+        <!-- tit -->
+        <h1 class="mainTit">Portfolio<br>by Sun</h1>
+        <!-- // tit  -->
+            
+        <!-- contact -->
+        <section class="contact">
+            <ul>
+                <li>contact</li>
+                <li><a href="mailto:sun1217shine@gmail.com"><img src="img/ico_email.png" alt=""></a></li>
+            </ul>
+        </section>
+        <!-- // contact -->
+
+
+        <section class="mainCon">
+            <!-- about -->
+            <article>
+                <a href="#about" title="바로가기">
+                    <img src="img/main_img01.jpg" alt="">
+                    <div class="mainTxt">
+                        <h2>01</h2>
+                        <p class="num">About me</p>
+                        <div class="hoverTxt">
+                            <p>About</p>
+                        </div>
+                        <p class="subTxt">Profile<br>about Sun.
+                        </p>
+                    </div>
+                </a>
+            </article>
+            <!-- // about -->
+
+            <!-- web site -->
+            <article>
+                <a href="#web" title="바로가기">
+                    <img src="img/main_img02.jpg" alt="">
+                    <div class="mainTxt">
+                        <h2>02</h2>
+                        <p class="num">Web site</p>
+                        <div class="hoverTxt">
+                            <p>Work</p>
+                        </div>
+                        <p class="subTxt">What I've done<br>so far</p>
+                    </div>
+                </a>
+            </article>
+            <!-- // web site -->
+
+            <!-- Design -->
+            <article>
+                <a href="#design" title="바로가기">
+                    <img src="img/main_img03.jpg" alt="">
+                    <div class="mainTxt">
+                        <h2>03</h2>
+                        <p class="num">Design</p>
+                        <div class="hoverTxt">
+                            <p>Image</p>
+                        </div>
+                        <p class="subTxt">What I've done<br>so far</p>
+                    </div>
+                </a>
+            </article>
+            <!-- // Design -->
+        </section>
+        <!-- // mainBox -->
         
+    </div>
+    <!-- // mainWrap -->
 
-    <section class="dPage">
-        <p><a href="another/index.html" target="blank">Image Portfolio</a></p>
-    </section><!--dPage-->
-        
+    <!-- subWrap -->
+    <div id="subWrap">
 
-    <section class="menu">
-        <div class="up">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div><!--up-->
-        <div class="down">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div><!--down-->
-    </section><!--menu-->
-
-
-    <section class="mainBox">
-
-        <article>
-            <a href="whami/index.html" target="blank">
-                <img src="img/image04.png" alt="건물 이미지">
-                <div class="mainTxt">
-                    <h2>01</h2>
-                    <p class="num">Whami</p>
-                    <div class="hoverTxt">
-                    <p>PC web</p>
-                    </div><!--hoverTxt-->
-                    <p class="subTxt">
-                        In publishing<br>and graphic<br>design.
-                    </p><!--subTxt-->
-                </div><!--mainTxt-->
-            </a>
-        </article><!--첫번째 article-->
-
-        <article>
-            <a href="aqua_planet_m/index.html" target="blank">
-                <img src="img/image03.png" alt="아쿠아리움 이미지">
-                <div class="mainTxt">
-                    <h2>02</h2>
-                    <p class="num">Aqua Planet</p>
-                    <div class="hoverTxt">
-                    <p>Mobile web</p>
-                    </div><!--hoverTxt-->
-                    <p class="subTxt">
-                        In publishing<br>to<br>mobile web.
-                    </p><!--subTxt-->
-                </div><!--mainTxt-->
-            </a>
-        </article><!--두번째 article-->
-
-        <article>
-            <a href="jinair/index.html" target="blank">
-                <img src="img/image06.png" alt="비행기 이미지">
-                <div class="mainTxt">
-                    <h2>03</h2>
-                    <p class="num">Jinair</p>
-                    <div class="hoverTxt">
-                    <p>One-scroll web</p>
-                    </div><!--hoverTxt-->
-                    <p class="subTxt">
-                        One-scroll<br>web page.
-                    </p><!--subTxt-->
-                </div><!--mainTxt-->
-            </a>
-        </article><!--세번째 article-->
-            
-        <article>
-            <a href="weddingU/index.html" target="blank">
-                <img src="img/image05.png" alt="결혼식 이미지">
-                <div class="mainTxt">
-                    <h2>04</h2>
-                    <p class="num">Wedding U</p>
-                    <div class="hoverTxt">
-                    <p>Responsive web</p>
-                    </div><!--hoverTxt-->
-                    <p class="subTxt">
-                        Response to<br>1200px, 768px, 640px<br>with Bootstrap.
-                    </p><!--subTxt-->
-                </div><!--mainTxt-->
-            </a>
-        </article><!--네번째 article-->
-            
-        <article>
-            <a href="todolist/index.html" target="blank">
-                <img src="img/image02.png" alt="메모 이미지">
-                <div class="mainTxt">
-                    <h2>05</h2>
-                    <p class="num">Todo List</p>
-                    <div class="hoverTxt">
-                    <p>PC web</p>
-                    </div><!--hoverTxt-->
-                    <p class="subTxt">
-                        Making by<br>Vanilla script.
-                    </p><!--subTxt-->
-                </div><!--mainTxt-->
-            </a>
-        </article><!--다섯번째 article-->
-
-    </section><!--mainBox-->
-
-
-    <section class="profileCon">
-
-        <div class="pImg">
-            <img src="img/pImage.jpg" alt="프로필 이미지">
-        </div><!-- .pImg -->
-    
-        <div class="pTxt">
-
-            <div class="profile cf on">
-                <article class="pro">
-                    <p class="tit">Profile</p>
-                    <ul class="cf">
-                        <li>이름<br>생년월일</li>
-                        <li>선혜진<br>1990.12.17 (만 29세)</li>
+        <!-- about -->
+        <section id="about">
+            <div class="aboutWrap">
+                <!-- titBox -->
+                <div class="titBox">
+                    <img src="../img/about_img01.png" alt="">
+                    <p class="aboutTit"><span>Sun Hye Jin</span></p>
+                    <ul class="aboutInfo cf">
+                        <li>#3년차_웹디자이너</li>
+                        <li>#퍼블리싱가능</li>
+                        <li>#웹접근성</li>
+                        <li>#원활한_커뮤니케이션</li>
                     </ul>
-                </article><!-- .pro -->
+                </div>
+                <!-- // titBox -->
 
-                <article class="edu">
-                    <p class="tit">Education</p>
-                    <p><b>2019.05</b> 더조은컴퓨터아카데미 NCS '디지털웹&amp;앱디자인콘텐츠제작(프론트앤드개발)' 과정 수료</p>
-                    <p><b>2013.02</b> 신라대학교 문헌정보학과 졸업</p>
-                </article><!-- .edu -->
+                <!-- infoBox -->
+                <div class="infoBox">
+                    <!-- 경력 -->
+                    <div class="carrer">
+                        <p class="tit">경력</p>
+                        <ul class="info">
+                            <li>
+                                <span class="day">2020.05 ~ 현재</span>
+                                <span class="txt">소프트웨어개발 회사 - 홈페이지 기획, 웹디자인, 퍼블리싱, 홈페이지 유지보수 등</span>
+                            </li>
+                            <li>
+                                <span class="day">2018.11 ~ 2019.05</span>
+                                <span class="txt">더조은컴퓨터아카데미 - 디지털 웹 & 앱 디자인 콘텐츠 제작(NCS) 수료</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="infoBox">
+                    <!-- 주요 참여 프로젝트 -->
+                    <div class="project">
+                        <p class="tit">주요 참여 프로젝트 </p>
+                        <ul class="info">
+                            <li>
+                                <span class="day">2022.04 ~ 2020.06</span>
+                                <span class="txt">경남대표도서관 홈페이지 고도화</span>
+                            </li>
+                            <li>
+                                <span class="day">2022.04 ~ 2020.06</span>
+                                <span class="txt">경남 환경교육 플랫폼 구축</span>
+                            </li>
+                            <li>
+                                <span class="day">2021.12 ~ 2021.12</span>
+                                <span class="txt">경상남도 농업기술원 메인 개편</span>
+                            </li>
+                            <li>
+                                <span class="day">2021.05 ~ 2021.11</span>
+                                <span class="txt">비대면 온라인 신청 플랫폼 경남 바로 서비스 구축</span>
+                            </li>
+                            <li>
+                                <span class="day">2021.04 ~ 2021.09</span>
+                                <span class="txt">경상남도 청년 정보플랫폼 구축</span>
+                            </li>
+                            <li>
+                                <span class="day">2020.05 ~ 현재</span>
+                                <span class="txt">경상남도 홈페이지 통합유지보수용역</span>
+                            </li>
+                            <li>
+                                <span class="day">2020.05 ~ 현재</span>
+                                <span class="txt">경남대표도서관 정보시스템 통합유지보수 용역</span>
+                            </li>
+                            <li>
+                                <span class="day">2020.05 ~ 현재</span>
+                                <span class="txt">경상남도교육청 통합공공도서관 응용프로그램 유지관리 용역</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // infoBox -->
 
-                <article class="carrer">
-                        <p class="tit">Design Career</p>
-                        <p><b>2019.12 - 2020.03</b> 볼드윈</p>
-                        <p><b>2019.08 - 2019.11</b> 이엠</p>
-                    </article><!-- .carrer -->
+            </div>
+        </section>
+        <!-- // about -->
 
-                <article class="skill">
-                    <p class="tit">Skill</p>
-                    <ul>
-                        <li><p>Photoshop</p><div><div></div></div></li>
-                        <li><p>Illustraion</p><div><div></div></div></li>
-                        <li><p>html &amp; css</p><div><div></div></div></li>
-                        <li><p>JavaScript</p><div><div></div></div></li>
-                        <li><p>Jquery</p><div><div></div></div></li>
-                    </ul>
-                </article><!-- .skill -->
 
-                <article class="contact">
-                    <p class="tit">Profile</p>
-                    <ul>
-                        <li>E-mail<br>전화번호</li>
-                        <li><a href="mailto:sun1217shine@gmail.com" class="eMail">sun1217shine@gmail.com</a><br>010-7617-0618</li>
-                    </ul>
-                </article><!-- .contact -->
+        <!-- web -->
+        <section id="web">
+            <div class="webWrap">
+                <div class="sectionTit">
+                    <h2><span>Web</span> site</h2>
+                    <span>실제로 작업한 홈페이지입니다.</span>
+                </div>
+                <ul class="webCon">
+                    <li class="webBox">
+                        <a href="https://lib.gyeongnam.go.kr/index.lib" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/web_img01.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">경남대표도서관</p>
+                                <ul class="detailBox">
+                                    <li>
+                                        <span class="info">디자인</span>
+                                        <div class="bar"><div></div></div>
+                                        <span class="percent">100%</span>
+                                    </li>
+                                    <li>
+                                        <span class="info">퍼블리싱</span>
+                                        <div class="bar"><div></div></div>
+                                        <span class="percent">100%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webBox">
+                        <a href="http://www.gn-platform.or.kr/main.do" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/web_img02.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">울산경남지역혁신플랫폼</p>
+                                <ul class="detailBox">
+                                    <li>
+                                        <span class="info">디자인</span>
+                                        <div class="bar per75"><div></div></div>
+                                        <span class="percent">75%</span>
+                                    </li>
+                                    <li>
+                                        <span class="info">퍼블리싱</span>
+                                        <div class="bar"><div></div></div>
+                                        <span class="percent">100%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webBox">
+                        <a href="http://www.k-sis.com/" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/web_img03.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">케이시스</p>
+                                <ul class="detailBox">
+                                    <li>
+                                        <span class="info">디자인</span>
+                                        <div class="bar per60"><div></div></div>
+                                        <span class="percent">60%</span>
+                                    </li>
+                                    <li>
+                                        <span class="info">퍼블리싱</span>
+                                        <div class="bar per70"><div></div></div>
+                                        <span class="percent">70%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webBox">
+                        <a href="https://youth.gyeongnam.go.kr/youth/" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/web_img04.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">청년정보플랫폼</p>
+                                <ul class="detailBox">
+                                    <li>
+                                        <span class="info">디자인</span>
+                                        <div class="bar per60"><div></div></div>
+                                        <span class="percent">60%</span>
+                                    </li>
+                                    <li>
+                                        <span class="info">퍼블리싱</span>
+                                        <div class="bar per70"><div></div></div>
+                                        <span class="percent">70%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webBox">
+                        <a href="https://baro.gyeongnam.go.kr/baro/" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/web_img05.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">바로서비스</p>
+                                <ul class="detailBox">
+                                    <li>
+                                        <span class="info">디자인</span>
+                                        <div class="bar"><div></div></div>
+                                        <span class="percent">100%</span>
+                                    </li>
+                                    <li>
+                                        <span class="info">퍼블리싱</span>
+                                        <div class="bar per70"><div></div></div>
+                                        <span class="percent">70%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webBox">
+                        <a href="https://www.gyeongnam.go.kr/index.gyeong?contentsSid=6324&&cpath=%2Fgnnature" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/web_img06.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">환경교육플랫폼</p>
+                                <ul class="detailBox">
+                                    <li>
+                                        <span class="info">디자인</span>
+                                        <div class="bar"><div></div></div>
+                                        <span class="percent">100%</span>
+                                    </li>
+                                    <li>
+                                        <span class="info">퍼블리싱</span>
+                                        <div class="bar per50"><div></div></div>
+                                        <span class="percent">50%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- // web -->
 
-                <div class="close">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div><!-- .close -->
-            </div><!-- .profile-->
-            
-        </div><!--.pTxt-->
 
-    </section> <!-- .profileCon -->
-    
-</div><!--#mainWrap-->
+        <!-- design -->
+        <section id="design">
+            <div class="webWrap">
+                <div class="sectionTit">
+                    <h2><span>De</span>sign</h2>
+                    <span>시안 및 이미지 작업물입니다.</span>
+                </div>
+                <ul class="webCon">
+                    <li class="webBox">
+                        <a href="/sub/sub01.html" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/design_img01.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">경남대표도서관</p>
+                                <p class="txt">홈페이지 시안입니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webBox">
+                        <a href="/sub/sub02.html" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/design_img02.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">경남환경교육포털</p>
+                                <p class="txt">홈페이지 시안입니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webBox">
+                        <a href="/sub/sub03.html" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/design_img03.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">한방항노화기업지원포털</p>
+                                <p class="txt">홈페이지 시안입니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webBox">
+                        <a href="/sub/sub04.html" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/design_img04.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">경남농업기술원</p>
+                                <p class="txt">홈페이지 시안입니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webBox">
+                        <a href="/sub/sub05.html" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/design_img05.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">제주여행</p>
+                                <p class="txt">홈페이지 시안입니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webBox">
+                        <a href="/sub/sub06.html" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/design_img06.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">이미지 디자인</p>
+                                <p class="txt">이미지 디자인 작업물입니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- // design -->
+
+    </div>
+    <!-- // subWrap -->
 </body>
 </html>
