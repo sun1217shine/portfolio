@@ -81,13 +81,13 @@ header .gnb ul li:hover a{animation:.1s linear infinite alternate headHover}
 #about .aboutTit span{position:relative;}
 #about .aboutTit span::before{display: block;content: '';width: 21px;height: 32px;background: url(/img/about_tit.png) no-repeat;position:absolute;left: -11px;top: -14px;}
 #about .aboutInfo{margin-top: 35px;}
-#about .aboutInfo li{border:1px solid #fff;border-radius:100px;text-align:center;color:#fff;padding:9px 50px;float:left;margin:0 7px;opacity: 0.7; transition:0.3s;}
+#about .aboutInfo li{border:1px solid #fff;border-radius:100px;text-align:center;color:#fff;padding:9px 50px;float:left;margin:0 7px;opacity: 0.7; transition:0.3s; cursor: default;}
 #about .aboutInfo li:hover{opacity:1;}
 
 #about .infoBox{margin-top:65px;}
 #about .infoBox .tit{color: #61d7fd;text-align: center;font-family: 'GmarketSans';font-size: 1.5em;position: relative; padding-bottom:10px;margin-bottom: 20px;}
 #about .infoBox .tit::after{display: block; content: ''; width: 55px; height: 1px;background-color: #61d7fd; position: absolute;left: 50%; transform: translateX(-50%); bottom: 0;}
-#about .infoBox .info li{color: #fff;/* font-size: 1.25em; */margin: 5px 0;}
+#about .infoBox .info li{color: #fff;/* font-size: 1.25em; */margin: 5px 0;display: flex;}
 #about .infoBox .info li span{display:inline-block}
 #about .infoBox .info li .day{font-family: 'GmarketSans';width: 200px;margin-right: 36px;}
 
@@ -116,6 +116,7 @@ header .gnb ul li:hover a{animation:.1s linear infinite alternate headHover}
 .webBox:hover .txtBox .detailBox .bar.per60 > div{width: 60%;}
 .webBox:hover .txtBox .detailBox .bar.per70 > div{width: 70%;}
 .webBox:hover .txtBox .detailBox .bar.per75 > div{width: 75%;}
+.webBox:hover .txtBox .detailBox .bar.per80 > div{width: 80%;}
 
 
 /* design */
