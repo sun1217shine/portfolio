@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <script src="/js/jquery-3.6.1.min.js"></script>
     <script src="/js/jquery.mousewheel.min.js"></script>
-    <script src="/js/main.js"></script>
     <link rel="shortcut icon" href="/img/favicon.ico">
     <meta property="og:title" content="Sun Hye Jin portfolio"/>
     <meta property="og:image" content="https://sun1217shine.github.io/img/og.jpg"/>
@@ -34,14 +33,12 @@
     </header>
     <!-- // header -->
 
-
     <!-- mainWrap -->
     <div id="mainWrap">
-        
         <!-- tit -->
         <h1 class="mainTit">Portfolio<br>by Sun</h1>
         <!-- // tit  -->
-            
+
         <!-- contact -->
         <section class="contact">
             <ul>
@@ -50,7 +47,6 @@
             </ul>
         </section>
         <!-- // contact -->
-
 
         <section class="mainCon">
             <!-- about -->
@@ -103,13 +99,11 @@
             <!-- // Design -->
         </section>
         <!-- // mainBox -->
-        
     </div>
     <!-- // mainWrap -->
 
     <!-- subWrap -->
     <div id="subWrap">
-
         <!-- about -->
         <section id="about">
             <div class="aboutWrap">
@@ -134,7 +128,7 @@
                         <ul class="info">
                             <li>
                                 <span class="day">2022.12 ~ 현재</span>
-                                <span class="txt">마케팅 회사 - 홈페이지 기획, 웹디자인, 퍼블리싱, 홈페이지 유지보수 등</span>
+                                <span class="txt">마케팅 회사 - 홈페이지 기획, 웹디자인, 퍼블리싱, 홈페이지 유지보수, 웹진 관리 등</span>
                             </li>
                             <li>
                                 <span class="day">2020.05 ~ 2022.11</span>
@@ -153,8 +147,8 @@
                         <p class="tit">주요 참여 프로젝트 </p>
                         <ul class="info">
                             <li>
-                                <span class="day">2023.02 ~ 2023.02</span>
-                                <span class="txt">환경교육포털 웹진 페이지 디자인</span>
+                                <span class="day">2023.12 ~ 2023.03</span>
+                                <span class="txt">서울주택도시공사 웹진, 환경교육포털 웹진, 극지연구소 웹진 디자인</span>
                             </li>
                             <li>
                                 <span class="day">2022.12 ~ 2023.02</span>
@@ -192,11 +186,9 @@
                     </div>
                 </div>
                 <!-- // infoBox -->
-
             </div>
         </section>
         <!-- // about -->
-
 
         <!-- web -->
         <section id="web">
@@ -206,6 +198,26 @@
                     <span>실제로 작업한 홈페이지입니다.</span>
                 </div>
                 <ul class="webCon">
+                    <li class="webBox">
+                        <a href="https://bitsol.kr/" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/web_img07.jpg" alt=""></div>
+                            <div class="txtBox">
+                                <p class="tit">빛솔 커뮤니케이션</p>
+                                <ul class="detailBox">
+                                    <li>
+                                        <span class="info">디자인</span>
+                                        <div class="bar per80"><div></div></div>
+                                        <span class="percent">80%</span>
+                                    </li>
+                                    <li>
+                                        <span class="info">퍼블리싱</span>
+                                        <div class="bar per50"><div></div></div>
+                                        <span class="percent">70%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
                     <li class="webBox">
                         <a href="https://lib.gyeongnam.go.kr/index.lib" title="새창열림" target="_blank">
                             <div class="imgBox"><img src="/img/web_img01.jpg" alt=""></div>
@@ -287,10 +299,10 @@
                         </a>
                     </li>
                     <li class="webBox">
-                        <a href="https://baro.gyeongnam.go.kr/baro/" title="새창열림" target="_blank">
-                            <div class="imgBox"><img src="/img/web_img05.jpg" alt=""></div>
+                        <a href="https://www.gyeongnam.go.kr/gnnature/index.gyeong?contentsSid=6324&&cpath=%2Fgnnature" title="새창열림" target="_blank">
+                            <div class="imgBox"><img src="/img/web_img06.jpg" alt=""></div>
                             <div class="txtBox">
-                                <p class="tit">바로서비스</p>
+                                <p class="tit">경남환경교육포털</p>
                                 <ul class="detailBox">
                                     <li>
                                         <span class="info">디자인</span>
@@ -306,31 +318,10 @@
                             </div>
                         </a>
                     </li>
-                    <li class="webBox">
-                        <a href="https://bitsol.kr/" title="새창열림" target="_blank">
-                            <div class="imgBox"><img src="/img/web_img06.jpg" alt=""></div>
-                            <div class="txtBox">
-                                <p class="tit">빛솔 커뮤니케이션</p>
-                                <ul class="detailBox">
-                                    <li>
-                                        <span class="info">디자인</span>
-                                        <div class="bar per80"><div></div></div>
-                                        <span class="percent">80%</span>
-                                    </li>
-                                    <li>
-                                        <span class="info">퍼블리싱</span>
-                                        <div class="bar per50"><div></div></div>
-                                        <span class="percent">70%</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </section>
         <!-- // web -->
-
 
         <!-- design -->
         <section id="design">
@@ -398,8 +389,22 @@
             </div>
         </section>
         <!-- // design -->
-
     </div>
     <!-- // subWrap -->
+
+    <script>
+    // header
+    var winHeight = $(window).height();
+
+    $(window).scroll(function () {
+        var winTop = $(document).scrollTop() + 95;
+
+        if(winTop > winHeight){
+            $('header').slideDown(300);
+        }else{
+            $('header').slideUp(300);
+        }
+    });
+    </script>
 </body>
 </html>
