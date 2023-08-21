@@ -106,6 +106,7 @@
   }
   .webBox .txtBox {
     width: calc(100% - 40px);
+    height:auto;
     left: 20px;
     bottom: 22px;
   }

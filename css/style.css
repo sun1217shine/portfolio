@@ -423,6 +423,7 @@ header .gnb ul li:hover a {
   color: #fff;
   width: calc(100% - 80px);
   transition: 0.3s;
+  height: 125px;
 }
 .webBox:hover .txtBox {
   bottom: 40px;
